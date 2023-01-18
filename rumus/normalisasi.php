@@ -6,12 +6,11 @@ include("../connection.php");
 <html lang="en">
 
 <head>
-    <script type="text/javascript" src="../tabel.js"></script>
+    <script type="text/javascript" src="../rumus-tabel.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SPK Kelompok 4</title>
 
     <!-- Custom font untuk web-->
@@ -25,6 +24,9 @@ include("../connection.php");
     <link rel="stylesheet" href="../css/style.css">
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+
+    <!-- CSS DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
 
     <style>
         body {
