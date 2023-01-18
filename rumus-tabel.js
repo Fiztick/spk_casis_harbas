@@ -5,15 +5,15 @@
 function js_normalisasi() {
     var dataSet = [
         ['Nendra Janu Prasetyo',	0.3153,	0.0000,	0.3162,	0.3162],
-        ['M.Fikriansyah', 0.3127,	0.0000,	0.3162,	0.3162],
-        ['Imam Akbar Asyauqi', 0.3121,	0.0000,	0.3162,	0.3162],
-        ['Ridho Fauzi Grafika', 0.3159,	0.0000,	0.3162,	0.3162],
-        ['Indra Taufiq', 0.3208,	0.3665,	0.3162,	0.3162],
-        ['Fahrezi', 0.3159,	0.3665,	0.3162,	0.3162],
-        ['Izzi Rizki', 0.3188,	0.8552,	0.3162,	0.3162],
-        ['Naufal Shidiq', 0.3108,	0.0000,	0.3162,	0.3162],
-        ['Laila Syaban Khairani', 0.3191,	0.0000,	0.3162,	0.3162],
-        ['Kayla Maharani', 0.3208,	0.0000,	0.3162,	0.3162]
+        ['M.Fikriansyah',           0.3127,	0.0000,	0.3162,	0.3162],
+        ['Imam Akbar Asyauqi',      0.3121,	0.0000,	0.3162,	0.3162],
+        ['Ridho Fauzi Grafika',     0.3159,	0.0000,	0.3162,	0.3162],
+        ['Indra Taufiq',            0.3208,	0.3665,	0.3162,	0.3162],
+        ['Fahrezi',                 0.3159,	0.3665,	0.3162,	0.3162],
+        ['Izzi Rizki',              0.3188,	0.8552,	0.3162,	0.3162],
+        ['Naufal Shidiq',           0.3108,	0.0000,	0.3162,	0.3162],
+        ['Laila Syaban Khairani',   0.3191,	0.0000,	0.3162,	0.3162],
+        ['Kayla Maharani',          0.3208,	0.0000,	0.3162,	0.3162],
     ];
 
     $(document).ready(function () {
@@ -36,16 +36,16 @@ function js_normalisasi() {
 //Tabel Terbobot
 function js_terbobot() {
     var dataSet1 = [
-        ['Nendra Janu Prasetyo', 0.0946,	0.0000,	0.0316,	0.0316],
-        ['M.Fikriansyah', 0.0938, 0.0000, 0.0316, 0.0316],
-        ['Imam Akbar Asyauqi', 0.0936, 0.0000, 0.0316, 0.0316],
-        ['Ridho Fauzi Grafika', 0.0948, 0.0000, 0.0316, 0.0316],
-        ['Indra Taufiq', 0.0962, 0.1833, 0.0316, 0.0316],
-        ['Fahrezi', 0.0948, 0.1833, 0.0316, 0.0316],
-        ['Izzi Rizki', 0.0956, 0.4276, 0.0316, 0.0316],
-        ['Naufal Shidiq', 0.0932, 0.0000, 0.0316, 0.0316],
-        ['Laila Syaban Khairani', 0.0957, 0.0000, 0.0316, 0.0316],
-        ['Kayla Maharani', 0.0962, 0.0000, 0.0316, 0.0316],
+        ['Nendra Janu Prasetyo',        0.0946,	0.0000,	0.0316,	0.0316],
+        ['M.Fikriansyah',               0.0938, 0.0000, 0.0316, 0.0316],
+        ['Imam Akbar Asyauqi',          0.0936, 0.0000, 0.0316, 0.0316],
+        ['Ridho Fauzi Grafika',         0.0948, 0.0000, 0.0316, 0.0316],
+        ['Indra Taufiq',                0.0962, 0.1833, 0.0316, 0.0316],
+        ['Fahrezi',                     0.0948, 0.1833, 0.0316, 0.0316],
+        ['Izzi Rizki',                  0.0956, 0.4276, 0.0316, 0.0316],
+        ['Naufal Shidiq',               0.0932, 0.0000, 0.0316, 0.0316],
+        ['Laila Syaban Khairani',       0.0957, 0.0000, 0.0316, 0.0316],
+        ['Kayla Maharani',              0.0962, 0.0000, 0.0316, 0.0316],
     ];
 
     $(document).ready(function () {
@@ -67,7 +67,7 @@ function js_terbobot() {
 //Tabel Ideal Positif
 function js_ideal1() {
     var dataSet2 = [
-        ['Solusi Ideal Positif', 0.0962,	0.4276,	0.0316,	0.0316],
+        ['Solusi Ideal Positif',    0.0962, 0.4276,	0.0316,	0.0316],
     ];
 
     $(document).ready(function () {
@@ -90,7 +90,7 @@ function js_ideal1() {
 // Tabel Ideal Negatif
 function js_ideal2() {
     var dataSet3 = [
-        ['Solusi Ideal Negatif', 0.0932,	0.0000,	0.0316,	0.0316],
+        ['Solusi Ideal Negatif',    0.0932,	0.0000,	0.0316,	0.0316],
     ];
 
     $(document).ready(function () {
@@ -137,17 +137,6 @@ function js_jarak1() {
         });
     });
 }
-
-0.
-0.
-0.
-0.
-0.
-0.1833
-0.
-0.
-0.
-0.
 
 // Tabel Jarak Ideal Negatif
 function js_jarak2() {
