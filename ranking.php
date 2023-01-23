@@ -47,6 +47,11 @@ include("connection.php");
             color: #4e73df;
             background-color: white;
         }
+
+        p {
+            color:black; 
+            text-align: justify;
+        }
     </style>
 </head>
 
@@ -91,6 +96,11 @@ include("connection.php");
             <li class="nav-item active">
                 <a class="nav-link" href="ranking.php">
                     <span>Ranking Calon Siswa</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="tentang_kami.php"  style="position: fixed; bottom: 0;">
+                    <span>Tentang Kami</span></a>
             </li>
 
         </ul>

@@ -96,6 +96,11 @@ include("connection.php");
                     <span>Ranking Calon Siswa</span></a>
             </li>
 
+            <li class="nav-item active">
+                <a class="nav-link" href="tentang_kami.php"  style="position: fixed; bottom: 0;">
+                    <span>Tentang Kami</span></a>
+            </li>
+
         </ul>
         <!-- End of Sidebar -->
 

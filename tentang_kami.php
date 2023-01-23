@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SPK Calon Siswa Baru SMK Harapan Bangsa</title>
+    <title>Tentang Kami</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,79 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+            align-items: center;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        img {
+            display: block;
+            width: 50%;
+            height: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #nama-kami {
+            text-align: center;
+            color: black;
+        }
+
+        .hafiz {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background: url("image/hafiz2.gif");
+            background-position: 50% 50%;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .aldi {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background: url("image/aldi.png");
+            background-position: 50% 25%;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .agung {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background: url("image/agung.gif");
+            background-position: 50% 50%;
+            background-size: cover;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -61,8 +134,11 @@
                     <span>Ranking Calon Siswa</span></a>
             </li>
 
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
             <li class="nav-item active">
-                <a class="nav-link" href="tentang_kami.php" style="position: fixed; bottom: 0;">
+                <a class="nav-link" href="#">
                     <span>Tentang Kami</span></a>
             </li>
 
@@ -71,23 +147,35 @@
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-
             <!-- Main Content -->
             <div id="content">
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <div id="ranking-wrapper" class="shadow p-3 mb-5 bg-white rounded" style="background-color: grey;">
-                        <h1 style="text-align: center; color:black;">Studi Kasus</h1>
-                        <p style="text-align: justify; padding:5px; color:black;">
-                            <img src="image/LogoHB.png" alt="Logo Harapan Bangsa" width="200" height="150" style="float:left; margin-right:20px;">
-                            SMK Harapan Bangsa didirikan dibawah naungan Yayasan Reste Nur Insani yang merupakan institusi pendidikan formal mempunyai visi misi dan strategi baru dalam proses pembelajaran.
-                            Sebagai institusi pendidikan berusaha menyelaraskan kualitas pendidikan dengan kebutuhan dunia kerja dalam pembentukan sumber daya manusia yang unggul.<br><br>
-                            Kualitas sekolah selalu di iringi dengan banyak nya jumlah siswa dan calon siswa yang ingin daftar di sekolah tersebut, dan SMK Harapan Bangsa adalah salah satunya. Dengan
-                            banyaknya calon siswa yang ingin mendaftar maka perlu diadakan sebuah inovasi teknologi untuk membantu dan mendukung dalam pemilihan calon siswa yang akan diterima oleh sekolah.
-                            Maka dari itu sistem pendukung keputusan penerimaan calon siswa berbasis website ini dibuat dengan kriteria variable penilaian yang sesuai, sama seperti
-                            penerimaan siswa sebelumnya yang secara manual oleh panitia serta decision maker ppdb SMK Harapan Bangsa Depok.
-                        </p>
+                    <div id="ranking-wrapper" class="shadow p-3 mb-5 bg-white rounded" style="background-color: grey;  transform:translate(0px, 50%);">
+                        <h1 style="text-align: center; color:black;">Tentang Kami</h1>
+                        <div class="row">
+                            <div class="column">
+                                <a class="aldi" style="margin:auto; text-align:center; display:block;"></a>
+                                <h2 id="nama-kami">Aldi Dwi Prasetyo</h2>
+                                <p id="nama-kami">2007411003</p>
+                            </div>
+
+                            <div class="column">
+                                <a class="hafiz" style="margin:auto; text-align:center; display:block;"></a>
+                                <h2 id="nama-kami">Hafiz Juansyah Putra</h2>
+                                <p id="nama-kami">2007411020</p>
+                            </div>
+
+                            <div class="column">
+                                <a class="agung" style="margin:auto; text-align:center; display:block;"></a>
+                                <h2 id="nama-kami">Agung Reza Vergiawan</h2>
+                                <p id="nama-kami">2007411029</p>
+                            </div>
+                        
+                        </div>
+                        <!-- End Of row -->
                     </div>
+                    <!-- End Of ranking-wrapper -->
                 </div>
                 <!-- /.container-fluid -->
             </div>

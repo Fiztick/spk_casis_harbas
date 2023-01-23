@@ -112,7 +112,6 @@ include("../connection.php");
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Data Casis -->
-            <!-- Nav Item - Data Casis -->
             <li class="nav-item active">
                 <a class="nav-link" href="../index.php">
                     <span>Studi Kasus</span></a>
@@ -136,6 +135,16 @@ include("../connection.php");
             <li class="nav-item active">
                 <a class="nav-link" href="../ranking.php">
                     <span>Ranking Calon Siswa</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="../tentang_kami.php" 
+                style="position: fixed; bottom: 0; right:0; color:white; background-color:#486dda; 
+                    border-radius:150px; margin:20px; text-align:center; width:120px; padding:5px;">
+                    <span>Tentang Kami</span></a>
             </li>
 
         </ul>
