@@ -2,3 +2,14 @@
     font-weight: bold;
     background-color: yellow;
 }
+
+.sidebar-dark .nav-item.active .nav-link:hover {
+    color: #4e73df;
+    background-color: white;
+}
+
+br {
+    display: block;
+    margin: 10px 0;
+    color: black;
+}

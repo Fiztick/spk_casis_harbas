@@ -13,15 +13,13 @@ include("../connection.php");
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SPK Kelompok 4</title>
+    <title>Nilai Preferensi</title>
 
     <!-- Custom font untuk web-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/6dd0d33a7f.js" crossorigin="anonymous"></script>
 
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -40,15 +38,39 @@ include("../connection.php");
 
     <style>
         body {
-            color:black;
+            color: black;
         }
 
-        .topbar.navbar-light .navbar-nav .nav-item .active{
-            color:black;
+
+        .topbar.navbar-light .navbar-nav .nav-item .nav-link {
+            color: gray;
         }
 
-        .topbar.navbar-light .navbar-nav .nav-item .nav-link:hover{
-            color:black;
+        .topbar.navbar-light .navbar-nav .nav-item .active {
+            color: black;
+            font-weight: bolder;
+
+        }
+
+        .topbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+            color: black;
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+            color: black;
+        }
+
+        .h4,
+        h4 {
+            font-size: 1.5rem;
+            color: gray;
+        }
+
+        .sidebar-dark .nav-item.active .nav-link:hover {
+            color: #4e73df;
+            background-color: white;
         }
     </style>
 
@@ -56,7 +78,10 @@ include("../connection.php");
     <script>
         MathJax = {
             tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
             },
             svg: {
                 fontCache: 'global'
@@ -83,7 +108,7 @@ include("../connection.php");
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
                 <div class="bg-white p-1" style="color:black">SPK</div>
-                <div class="sidebar-brand-text mx-3">Kelompok 2</div>
+                <div class="sidebar-brand-text mx-1">SMK Harapan Bangsa</div>
             </a>
 
             <!-- Divider -->
@@ -92,22 +117,27 @@ include("../connection.php");
             <!-- Nav Item - Data Casis -->
             <li class="nav-item active">
                 <a class="nav-link" href="../index.php">
+                    <span>Studi Kasus</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="../calon_siswa.php">
                     <span>Data Calon Siswa</span></a>
             </li>
 
-            <!-- Nav Item - Ranking Casis -->
+            <!-- Nav Item - Rumus Topsis -->
             <li class="nav-item active">
-                <a class="nav-link" href="../ranking.php">
-                    <span>Ranking Casis</span></a>
+                <a class="nav-link" href="#">
+                    <span>Rumus Topsis</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Nav Item - Settings -->
+            <!-- Nav Item - Ranking Casis -->
             <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    <span>Rumus Topsis</span></a>
+                <a class="nav-link" href="../ranking.php">
+                    <span>Ranking Calon Siswa</span></a>
             </li>
 
         </ul>
@@ -118,30 +148,30 @@ include("../connection.php");
 
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <!-- Topbar Navbar -->
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="normalisasi.php">Normalisasi</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="ternormalisasi.php">Normalisasi dengan Bobot</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="solusi_ideal.php">Solusi Ideal</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " aria-current="page" href="jarak.php">Jarak dengan Solusi Ideal</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="preferensi.php">Preferensi</a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="normalisasi.php">Normalisasi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="ternormalisasi.php">Normalisasi dengan Bobot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="solusi_ideal.php">Solusi Ideal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="jarak.php">Jarak dengan Solusi Ideal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="preferensi.php">Preferensi</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-                <!-- End of Topbar -->
+                </div>
+            </nav>
+            <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
             <!-- Content 1 -->
@@ -200,4 +230,5 @@ include("../connection.php");
     </div>
     <!-- End of Content Wrapper -->
 </body>
+
 </html>
